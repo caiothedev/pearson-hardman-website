@@ -12,11 +12,11 @@ export default function PracticeAreasSection() {
                     title="Onde o que está em jogo é grande demais."
                     intro="Atuamos em operações e disputas de alta complexidade, sempre com um sócio à frente do caso."
                 />
-                <ol className="mt-14 md:mt-20 grid grid-cols-1 border-t border-l border-gray-300 md:grid-cols-2 lg:grid-cols-3">
+                <ol className="mt-14 md:mt-20 grid grid-cols-1 border-t-2 border-l-2 border-gray-300 md:grid-cols-2 lg:grid-cols-3">
                     {PRACTICE_AREAS.map((area, index) => (
                         <li
                             key={area.title}
-                            className="group flex flex-col gap-4 border-r border-b border-gray-300 bg-white-background p-8 md:p-10 hover:bg-black-background hover:text-white-text transition-normal"
+                            className="group flex flex-col gap-4 border-r-2 border-b-2 border-gray-300 bg-white-background p-8 md:p-10 hover:bg-black-background hover:text-white-text transition-normal"
                         >
                             <span aria-hidden="true" className="font-blair font-light text-sm tracking-[0.2em] text-gray-500 group-hover:text-gray-400-dark">
                                 {String(index + 1).padStart(2, "0")}

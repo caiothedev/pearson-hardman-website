@@ -46,9 +46,15 @@ body {
     font-family: var(--font-family-nimbus);
 }
 
-* {
-    margin: 0;
-    box-sizing: border-box;
+@layer base {
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    button {
+        border: none;
+    }
 }
 
 html {
@@ -69,10 +75,6 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--color-blue);
-}
-
-button {
-    border: none;
 }
 
 :focus-visible {

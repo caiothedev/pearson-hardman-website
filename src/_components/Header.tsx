@@ -12,7 +12,7 @@ export default function Header() {
             >
                 Pular para o conteúdo
             </a>
-            <div className={`${container} flex h-16 md:h-20 flex-row items-center justify-between gap-4`}>
+            <div className={`${container} flex h-16 md:h-20 flex-row items-center justify-between gap-8 md:gap-10 lg:gap-12`}>
                 <Link href="/" aria-label="Pearson Hardman, página inicial" className="flex flex-col leading-none">
                     <span className="pearson-hardman-font whitespace-nowrap font-medium uppercase text-sm sm:text-base md:text-lg">
                         Pearson Hardman
@@ -28,10 +28,6 @@ export default function Header() {
                                         className="group relative py-2 font-bold uppercase text-xs tracking-[0.2em] text-gray-400-dark hover:text-white-text transition-normal"
                                     >
                                         {link.label}
-                                        <span
-                                            aria-hidden="true"
-                                            className="absolute left-0 -bottom-0.5 h-px w-full origin-left scale-x-0 bg-white-text group-hover:scale-x-100 motion-safe:transition-transform motion-safe:duration-300"
-                                        />
                                     </Link>
                                 </li>
                             ))}

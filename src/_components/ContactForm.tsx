@@ -26,7 +26,7 @@ function validate(data: FormData): Errors {
 
 const labelClass = "font-blair font-bold uppercase tracking-[0.2em] text-xs text-gray-400-dark"
 const inputClass =
-    "w-full min-h-12 bg-transparent border-0 border-b border-white-text/30 px-0 py-3 text-base text-white-text placeholder:text-gray-500 focus:border-white-text transition-fast aria-[invalid=true]:border-red-400"
+    "w-full min-h-12 bg-transparent border-0 border-b-2 border-white-text/30 px-0 py-3 text-base text-white-text placeholder:text-gray-500 focus:border-white-text transition-fast aria-[invalid=true]:border-red-400"
 const errorClass = "text-sm text-red-300"
 
 /**

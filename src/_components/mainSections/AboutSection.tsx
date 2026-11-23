@@ -27,13 +27,15 @@ export default function AboutSection() {
                 </div>
             </div>
             <div className={`${container} mt-16 md:mt-24`}>
-                <dl className="grid grid-cols-1 border-t border-gray-300 sm:grid-cols-3">
+                <dl className="grid grid-cols-1 border-t-2 border-gray-300 sm:grid-cols-3">
                     {STATS.map((stat) => (
                         <div
                             key={stat.label}
-                            className="flex flex-col gap-3 border-b border-gray-300 py-8 sm:border-b-0 sm:border-r sm:px-8 sm:first:pl-0 sm:last:border-r-0"
+                            className="flex flex-col gap-3 border-b-2 border-gray-300 py-8 sm:border-b-0 sm:border-r-2 sm:px-8 sm:first:pl-0 sm:last:border-r-0"
                         >
-                            <dt className="order-2 text-sm leading-relaxed text-gray-500">{stat.label}</dt>
+                            <dt className="order-2 text-sm leading-relaxed text-gray-500">
+                                {stat.label}
+                            </dt>
                             <dd className="order-1 font-blair font-medium text-[clamp(2.5rem,5vw,3.5rem)] leading-none">
                                 {stat.value}
                             </dd>

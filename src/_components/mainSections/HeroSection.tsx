@@ -22,7 +22,7 @@ export default function HeroSection() {
             <div aria-hidden="true" className="hero-image-gradient absolute inset-0 -z-10" />
             <div className={`${container} flex flex-col items-center justify-end gap-5 pt-40 pb-16 text-center md:gap-7 md:pb-24`}>
                 <p className="font-blair font-bold uppercase tracking-[0.2em] text-xs md:text-sm text-gray-400-dark">
-                    Manhattan · Nova York
+                    Manhattan - Nova York
                 </p>
                 <h1
                     id="hero-title"
