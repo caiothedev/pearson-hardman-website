@@ -18,7 +18,7 @@ export default function Header() {
                         Pearson Hardman
                     </span>
                 </Link>
-                <div className="w-full flex flex-row items-center justify-between gap-2">
+                <div className="w-full flex flex-row items-center justify-end lg:justify-between gap-3">
                     <nav aria-label="Navegação principal" className="hidden lg:block">
                         <ul className="flex flex-row items-center gap-8">
                             {NAV_LINKS.map((link) => (
@@ -34,7 +34,7 @@ export default function Header() {
                         </ul>
                     </nav>
                     <MobileMenu />
-                    <Link href="/#contato" className="inline-flex items-center justify-center gap-2 min-h-10 px-5 font-blair font-bold uppercase text-sm cursor-pointer transition-normal disabled:cursor-not-allowed disabled:opacity-50 bg-white-background text-black-text border border-white-background hover:bg-transparent hover:text-white-text">
+                    <Link href="/#contato" className="inline-flex items-center justify-center gap-2 min-h-10 px-5 font-blair font-bold uppercase text-sm text-center cursor-pointer transition-normal disabled:cursor-not-allowed disabled:opacity-50 bg-white-background text-black-text border border-white-background hover:bg-transparent hover:text-white-text">
                         Agendar Reunião
                     </Link>
                 </div>

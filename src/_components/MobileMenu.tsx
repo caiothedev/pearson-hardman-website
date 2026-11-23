@@ -51,10 +51,13 @@ export default function MobileMenu() {
             >
                 <span aria-hidden="true" className="relative block h-3 w-6">
                     <span
-                        className={`absolute left-0 h-px w-6 bg-current transition-normal ${open ? "top-1.5 rotate-45" : "top-0"}`}
+                        className={`absolute left-0 h-[2px] w-6 bg-current transition-fast ${open ? "top-1.5 rotate-45" : "top-0"}`}
                     />
                     <span
-                        className={`absolute left-0 h-px w-6 bg-current transition-normal ${open ? "top-1.5 -rotate-45" : "top-3"}`}
+                        className={`absolute left-0 h-[2px] w-6 bg-current transition-fast ${open ? "opacity-0" : "opacity-100 top-1.5"}`}
+                    />
+                    <span
+                        className={`absolute left-0 h-[2px] w-6 bg-current transition-fast ${open ? "top-1.5 -rotate-45" : "top-3"}`}
                     />
                 </span>
             </button>

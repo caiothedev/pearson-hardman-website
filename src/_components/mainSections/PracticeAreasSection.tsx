@@ -4,7 +4,7 @@ import { PRACTICE_AREAS } from "@/_data/site"
 
 export default function PracticeAreasSection() {
     return (
-        <section id="atuacao" aria-labelledby="atuacao-title" className="scroll-mt-16 md:scroll-mt-20 bg-gray-100 py-20 md:py-32">
+        <section id="atuacao" aria-labelledby="atuacao-title" className="bg-white-foreground scroll-mt-16 md:scroll-mt-20 bg-gray-100 py-20 md:py-32">
             <div className={`${container} flex flex-col gap-12 lg:gap-16`}>
                 <SectionHeading
                     id="atuacao-title"

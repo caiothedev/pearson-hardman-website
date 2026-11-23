@@ -117,9 +117,9 @@ export default function ContactForm() {
             <div className="flex flex-col gap-2">
                 <label htmlFor="mensagem" className={labelClass}>Mensagem</label>
                 <textarea
-                    id="mensagem" name="mensagem" rows={5} required
+                    id="mensagem" name="mensagem" rows={5} maxLength={1500} required
                     aria-invalid={!!errors.mensagem} aria-describedby={describedBy("mensagem")}
-                    className={`${inputClass} resize-y`}
+                    className={`${inputClass} resize-y min-h-[120px] max-h-[300px]`}
                 />
                 {errors.mensagem && <p id="mensagem-erro" className={errorClass}>{errors.mensagem}</p>}
             </div>

@@ -7,7 +7,7 @@ export default function HeroSection() {
         <section
             id="hero-section"
             aria-labelledby="hero-title"
-            className="on-dark relative isolate flex min-h-[80svh] overflow-hidden bg-black-background text-white-text"
+            className="on-dark relative isolate flex min-h-[85svh] overflow-hidden bg-black-background text-white-text"
         >
             <Image
                 src="/images/hero-background.webp"
@@ -33,7 +33,7 @@ export default function HeroSection() {
                 <p className="max-w-2xl text-pretty text-base md:text-lg leading-relaxed text-gray-300">
                     Há décadas, a Pearson Hardman representa as empresas, os executivos e os investidores que não podem se dar ao luxo de perder. Nós fechamos.
                 </p>
-                <div className="flex w-full flex-col items-stretch justify-center gap-5 pt-2 sm:w-auto sm:flex-row sm:items-center">
+                <div className="flex w-full flex-col items-stretch justify-center gap-6 lg:gap-5 pt-2 sm:w-auto sm:flex-row sm:items-center">
                     <LinkButton href="/#contato" variant="primary">
                         Fale com um sócio
                     </LinkButton>

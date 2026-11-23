@@ -2,6 +2,7 @@
 
 :root {
     --white-background: #ffffff;
+    --white-foreground: #e4e4e4;
     --black-background: #000000;
     --foreground: #171717;
     --blue: #2188FF;
@@ -22,6 +23,7 @@
 
 @theme inline {
     --color-white-background: var(--white-background);
+    --color-white-foreground: var(--white-foreground);
     --color-black-background: var(--black-background);
     --color-foreground: var(--foreground);
     --color-blue: var(--blue);
@@ -93,7 +95,7 @@ html {
 
 .hero-image-gradient {
     background:
-        linear-gradient(to top, rgb(0 0 0 / 0.95) 0%, rgb(0 0 0 / 0.7) 30%, rgb(0 0 0 / 0.15) 65%, rgb(0 0 0 / 0.45) 100%),
+        linear-gradient(to top, rgb(0 0 0 / 0.9) 0%, rgb(0 0 0 / 0.65) 30%, rgb(0 0 0 / 0.15) 65%, rgb(0 0 0 / 0.4) 100%),
         linear-gradient(to right, rgb(0 0 0 / 0.6) 0%, rgb(0 0 0 / 0) 55%);
 }
 

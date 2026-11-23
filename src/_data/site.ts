@@ -62,18 +62,28 @@ export const PARTNERS = [
     {
         name: "Jessica Pearson",
         initials: "JP",
+        image: "/images/partners/jessica-pearson.jpg",
         role: "Sócia-fundadora e sócia-gerente",
         bio: "Fundou a firma e conduz cada decisão que importa. Quem senta à mesa com ela entende rápido por que o nome dela vem primeiro na parede.",
     },
     {
+        name: "Daniel Hardman",
+        initials: "DH",
+        image: "/images/partners/daniel-hardman.jpg",
+        role: "Sócio-fundador e sócio de sênior",
+        bio: "Formado em Direito por Harvard, é especialista em contencioso empresarial e fusões e aquisições. Tem um histórico de vitórias que poucos podem igualar.",
+    },
+    {
         name: "Harvey Specter",
         initials: "HS",
+        image: "/images/partners/harvey-specter.jpg",
         role: "Sócio sênior",
         bio: "Ex-promotor assistente de Manhattan e o melhor negociador da cidade. Especialista em fusões, aquisições e em fechar o que ninguém mais consegue.",
     },
     {
         name: "Louis Litt",
         initials: "LL",
+        image: "/images/partners/louis-litt.jpg",
         role: "Sócio e chefe dos associados",
         bio: "Formado em Direito por Harvard e referência em direito financeiro e societário. Ninguém conhece os números de um caso como ele.",
     },

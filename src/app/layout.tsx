@@ -5,12 +5,12 @@ import { nimbusSans, itcBlair } from "@/fonts"
 import "./globals.css"
 
 const SITE_URL = "https://pearsonhardman.com.br"
-const DESCRIPTION = "Pearson Hardman, firma de advocacia corporativa de Manhattan: fusões e aquisições, contencioso empresarial e direito societário. Site fictício inspirado na série Suits."
+const DESCRIPTION = "Firma de advocacia corporativa de Manhattan: fusões e aquisições, contencioso empresarial e direito societário. Site fictício inspirado na série Suits."
 
 export const metadata: Metadata = {
     metadataBase: new URL(SITE_URL),
     title: {
-        default: "Pearson Hardman",
+        default: `Pearson Hardman | ${DESCRIPTION}`,
         template: "%s | Pearson Hardman",
     },
     description: DESCRIPTION,

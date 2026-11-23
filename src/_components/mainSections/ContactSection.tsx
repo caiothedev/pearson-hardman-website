@@ -37,7 +37,7 @@ export default function ContactSection() {
                         <div className="flex flex-col gap-2">
                             <dt className="font-blair font-bold uppercase tracking-[0.2em] text-xs text-gray-400-dark">Fax</dt>
                             <dd className="text-base">
-                                <a className="underline underline-offset-4 decoration-white-text/30 hover:decoration-white-text transition-fast">
+                                <a href={ADDRESS.fax} className="underline underline-offset-4 decoration-white-text/30 hover:decoration-white-text transition-fast">
                                     {ADDRESS.fax}
                                 </a>
                             </dd>

@@ -10,8 +10,8 @@ export default function Footer() {
         <footer className="on-dark flex flex-col bg-black-background text-white-text">
             <div className={`${container} grid grid-cols-1 gap-12 py-16 md:py-20 lg:grid-cols-12`}>
                 <div className="flex flex-col gap-6 lg:col-span-4">
-                    <div className="flex flex-col">
-                        <span className="pearson-hardman-font font-medium uppercase tracking-[0.18em] text-xl">
+                    <div className="flex flex-col leading-[3px]">
+                        <span className="pearson-hardman-font font-medium uppercase text-xl">
                             Pearson Hardman
                         </span>
                         <span className="font-blair font-light uppercase tracking-[0.5em] text-[0.65rem] text-gray-400-dark mt-2">
@@ -71,7 +71,7 @@ export default function Footer() {
                 <p className="shrink-0">
                     Desenvolvido por{" "}
                     <a href="https://github.com/caiothedev" className="underline underline-offset-4 hover:text-white-text transition-fast">
-                        Caiothedev
+                        Caio Oliveira
                     </a>
                 </p>
             </div>
