@@ -6,7 +6,7 @@ export default function HeroSection() {
             <Image
                 src="/images/hero-background.webp"
                 alt=""
-                width={1920} height={1080}
+                width={3840} height={2160}
                 draggable={false}
                 className="size-full object-cover hero-image-gradient"
                 quality="100"
