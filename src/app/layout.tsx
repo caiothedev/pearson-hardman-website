@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next"
 import Header from "@/_components/Header"
 import Footer from "@/_components/Footer"
+import { nimbusSans, itcBlair } from "@/fonts"
 import "./globals.css"
 
 const SITE_URL = "https://pearsonhardman.com.br"
@@ -76,7 +77,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
     return (
-        <html lang="pt-BR" className="h-full antialiased">
+        <html lang="pt-BR" className={`${nimbusSans.variable} ${itcBlair.variable} h-full antialiased`}>
             <body className="min-h-full flex flex-col">
                 <Header />
                 {children}

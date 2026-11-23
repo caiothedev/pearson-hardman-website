@@ -8,7 +8,8 @@
     --white-text: #ffffff;
     --black-text: #000000;
 
-    --font-nimbus: "Nimbus", sans-serif;
+    --font-family-nimbus: var(--font-nimbus-sans), sans-serif;
+    --font-family-blair: var(--font-itc-blair), sans-serif;
 }
 
 @theme inline {
@@ -19,13 +20,14 @@
     --color-white-text: var(--white-text);
     --color-black-text: var(--black-text);
 
-    --font-nimbus: var(--font-nimbus);
+    --font-nimbus: var(--font-family-nimbus);
+    --font-blair: var(--font-family-blair);
 }
 
 body {
     background: var(--white-background);
     color: var(--black-text);
-    font-family: var(--font-nimbus);
+    font-family: var(--font-family-nimbus);
 }
 
 * {
@@ -58,7 +60,7 @@ button {
 }
 
 .pearson-hardman-font {
-    font-family: var(--font-blair);
+    font-family: var(--font-family-blair);
 }
 
 .hero-image-gradient {
