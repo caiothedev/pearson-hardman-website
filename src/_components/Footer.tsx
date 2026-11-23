@@ -60,9 +60,9 @@ export default function Footer() {
                 </div>
             </div>
             <div className={container}>
-                <hr className="border-0 border-t border-white-text/10" />
+                <hr className="border-0 border-t-2 border-white-text/10" />
             </div>
-            <div className={`${container} flex flex-col gap-3 py-8 text-xs leading-relaxed text-gray-400-dark md:flex-row md:justify-between md:gap-8`}>
+            <div className={`${container} flex flex-col items-center gap-3 py-8 text-xs leading-relaxed text-gray-400-dark md:flex-row md:justify-between md:gap-8`}>
                 <p className="max-w-3xl">
                     O conteúdo deste site é ficcional. A Pearson Hardman é a firma de advocacia da série <em>Suits</em>.
                     Este é um projeto de fã e de portfólio, sem fins comerciais e sem vínculo com a USA Network,
@@ -71,7 +71,7 @@ export default function Footer() {
                 <p className="shrink-0">
                     Desenvolvido por{" "}
                     <a href="https://github.com/caiothedev" className="underline underline-offset-4 hover:text-white-text transition-fast">
-                        caiothedev
+                        Caiothedev
                     </a>
                 </p>
             </div>

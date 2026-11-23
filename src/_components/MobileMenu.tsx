@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import { NAV_LINKS } from "@/_data/site"
+import { buttonClasses } from "@/_components/ui/styles"
 
 const MENU_ID = "menu-mobile"
 
@@ -57,16 +58,15 @@ export default function MobileMenu() {
                     />
                 </span>
             </button>
-
             <nav
                 id={MENU_ID}
                 aria-label="Navegação principal"
                 hidden={!open}
-                className="fixed inset-x-0 top-16 bottom-0 bg-black-background border-t border-white-text/10"
+                className="fixed inset-x-0 top-0 bottom-0 bg-black-background border-t-2 border-white-text/10"
             >
                 <ul className="flex flex-col px-4 py-6">
                     {NAV_LINKS.map((link) => (
-                        <li key={link.href} className="border-b border-white-text/10">
+                        <li key={link.href} className="border-b-2 border-white-text/10">
                             <Link
                                 href={link.href}
                                 onClick={() => setOpen(false)}
@@ -76,6 +76,15 @@ export default function MobileMenu() {
                             </Link>
                         </li>
                     ))}
+                    <li className="pt-8 sm:hidden">
+                        <Link
+                            href="/#contato"
+                            onClick={() => setOpen(false)}
+                            className={buttonClasses("primary", "w-full")}
+                        >
+                            Agendar reunião
+                        </Link>
+                    </li>
                 </ul>
             </nav>
         </div>

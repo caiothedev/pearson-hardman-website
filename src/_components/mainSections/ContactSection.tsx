@@ -8,7 +8,7 @@ export default function ContactSection() {
         <section
             id="contato"
             aria-labelledby="contato-title"
-            className="on-dark scroll-mt-16 md:scroll-mt-20 bg-black-background text-white-text py-20 md:py-32 border-b border-white-text/10"
+            className="on-dark scroll-mt-16 md:scroll-mt-20 bg-black-background text-white-text py-20 md:py-32 border-b-2 border-white-text/10"
         >
             <div className={`${container} grid grid-cols-1 gap-14 lg:grid-cols-12 lg:gap-16`}>
                 <div className="flex flex-col gap-10 lg:col-span-5">

@@ -2,7 +2,6 @@ import Link from "next/link"
 import MobileMenu from "@/_components/MobileMenu"
 import { NAV_LINKS } from "@/_data/site"
 import { container } from "@/_components/ui/styles"
-import Button from "./ui/Button"
 
 export default function Header() {
     return (
@@ -39,9 +38,9 @@ export default function Header() {
                         </ul>
                     </nav>
                     <MobileMenu />
-                    <button className="inline-flex items-center justify-center gap-2 min-h-10 px-5 font-blair font-bold uppercase text-sm cursor-pointer transition-normal disabled:cursor-not-allowed disabled:opacity-50 bg-white-background text-black-text border border-white-background hover:bg-transparent hover:text-white-text">
+                    <Link href="/#contato" className="inline-flex items-center justify-center gap-2 min-h-10 px-5 font-blair font-bold uppercase text-sm cursor-pointer transition-normal disabled:cursor-not-allowed disabled:opacity-50 bg-white-background text-black-text border border-white-background hover:bg-transparent hover:text-white-text">
                         Agendar Reunião
-                    </button>
+                    </Link>
                 </div>
             </div>
         </header>

@@ -8,7 +8,7 @@ type LinkButtonProps = Omit<React.ComponentProps<typeof Link>, "href"> & {
 
 export default function LinkButton({ href, variant = "primary", className, children, ...rest }: LinkButtonProps) {
     return (
-        <Link href={href}>
+        <Link href={href} className={buttonClasses(variant, className)} {...rest}>
             {children}
         </Link>
     )
