@@ -5,6 +5,7 @@ import { nimbusSans, itcBlair } from "@/fonts"
 import "./globals.css"
 
 const SITE_URL = "https://pearsonhardman.com.br"
+const DESCRIPTION = "Pearson Hardman, firma de advocacia corporativa de Manhattan: fusões e aquisições, contencioso empresarial e direito societário. Site fictício inspirado na série Suits."
 
 export const metadata: Metadata = {
     metadataBase: new URL(SITE_URL),
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
         default: "Pearson Hardman",
         template: "%s | Pearson Hardman",
     },
-    description: "",
+    description: DESCRIPTION,
     applicationName: "Pearson Hardman",
     authors: [
         {
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
         url: SITE_URL,
         siteName: "Pearson Hardman",
         title: "Pearson Hardman",
-        description: "",
+        description: DESCRIPTION,
         images: [
             {
                 url: "/og-image.jpg",
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
     twitter: {
         card: "summary_large_image",
         title: "Pearson Hardman",
-        description: "",
+        description: DESCRIPTION,
         images: ["/og-image.jpg"],
     },
     alternates: {
@@ -64,7 +65,6 @@ export const metadata: Metadata = {
     },
     icons: {
         icon: "/favicon.ico",
-        apple: "/apple-icon.png",
     },
 }
 
