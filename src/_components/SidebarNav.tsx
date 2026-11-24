@@ -1,5 +1,6 @@
 "use client"
 
+import { Suspense } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { logout } from "@/_lib/actions"
@@ -10,13 +11,24 @@ const LINKS = [
     { href: "/dashboard/contracts", label: "Contratos" },
 ] as const
 
-function isActive(pathname: string, href: string) {
+function isActive(pathname: string | null, href: string) {
+    if (pathname === null) return false
     return href === "/dashboard" ? pathname === href : pathname.startsWith(href)
 }
 
 export default function SidebarNav() {
-    const pathname = usePathname()
+    return (
+        <Suspense fallback={<NavList pathname={null} />}>
+            <ActiveNav />
+        </Suspense>
+    )
+}
 
+function ActiveNav() {
+    return <NavList pathname={usePathname()} />
+}
+
+function NavList({ pathname }: { pathname: string | null }) {
     return (
         <nav aria-label="Navegação interna" className="border-t border-white-text/10 md:border-t-0">
             <ul className="flex flex-row overflow-x-auto md:flex-col md:px-3">

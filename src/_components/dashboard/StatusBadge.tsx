@@ -8,7 +8,7 @@ const CONTRACT_STYLES: Record<ContractStatus, string> = {
     closed: "bg-transparent text-gray-500 border-gray-300",
 }
 
-const base = "inline-flex items-center whitespace-nowrap border px-2 py-0.5 font-blair font-bold uppercase tracking-[0.1em] text-[0.65rem]"
+const base = "inline-flex items-center whitespace-nowrap border-2 px-2 py-0.5 font-blair font-bold uppercase tracking-[0.1em] text-[0.65rem]"
 
 export function ContractStatusBadge({ status }: { status: ContractStatus }) {
     return <span className={`${base} ${CONTRACT_STYLES[status]}`}>{CONTRACT_STATUS_LABELS[status]}</span>

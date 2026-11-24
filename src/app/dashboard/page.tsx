@@ -45,7 +45,7 @@ async function Overview() {
                 title={`Olá, ${user.name.split(" ")[0]}.`}
                 description="Um resumo da carteira da firma. Os números são fictícios; a confiança, não."
             />
-            <ul className="grid grid-cols-1 gap-px border border-gray-300 bg-gray-300 sm:grid-cols-2 2xl:grid-cols-4">
+            <ul className="grid grid-cols-1 gap-px border-2 border-gray-300 bg-gray-300 sm:grid-cols-2 2xl:grid-cols-4">
                 {stats.map((stat) => (
                     <li key={stat.label} className="flex flex-col gap-2 bg-white-background p-6">
                         <span className={panelHeading}>{stat.label}</span>
@@ -55,7 +55,7 @@ async function Overview() {
             </ul>
             <div className="grid grid-cols-1 gap-10 2xl:grid-cols-3">
                 <Panel className="2xl:col-span-2">
-                    <div className="flex items-center justify-between gap-4 border-b border-gray-300 px-4 py-4">
+                    <div className="flex items-center justify-between gap-4 border-b-2 border-gray-300 px-4 py-4">
                         <h2 className={panelHeading}>Contratos recentes</h2>
                         <Link href="/dashboard/contracts" className="whitespace-nowrap text-sm text-blue-strong underline-offset-4 hover:underline">
                             Ver todos
@@ -64,13 +64,13 @@ async function Overview() {
                     <ContractsTable contracts={contracts.slice(0, 5)} showClient />
                 </Panel>
                 <Panel>
-                    <div className="border-b border-gray-300 px-4 py-4">
+                    <div className="border-b-2 border-gray-300 px-4 py-4">
                         <h2 className={panelHeading}>Seus clientes</h2>
                     </div>
                     {isPartner && myClients.length > 0 ? (
                         <ul>
                             {myClients.map((client) => (
-                                <li key={client.id} className="border-b border-gray-300 last:border-b-0">
+                                <li key={client.id} className="border-b-2 border-gray-300 last:border-b-0">
                                     <Link
                                         href={`/dashboard/clients/${client.id}`}
                                         className="flex items-center justify-between gap-4 px-4 py-4 transition-fast hover:bg-gray-100"

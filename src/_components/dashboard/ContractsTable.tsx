@@ -17,7 +17,7 @@ export default function ContractsTable({ contracts, showClient = false }: { cont
     return (
         <div className="overflow-x-auto">
             <table className="w-full min-w-[640px] border-collapse text-sm">
-                <thead className="border-b border-gray-300">
+                <thead className="border-b-2 border-gray-300">
                     <tr>
                         <th scope="col" className={th}>Contrato</th>
                         {showClient && <th scope="col" className={th}>Cliente</th>}
@@ -28,7 +28,7 @@ export default function ContractsTable({ contracts, showClient = false }: { cont
                 </thead>
                 <tbody>
                     {contracts.map((contract) => (
-                        <tr key={contract.id} className="border-b border-gray-300 last:border-b-0">
+                        <tr key={contract.id} className="border-b-2 border-gray-300 last:border-b-0">
                             <td className={td}>
                                 <span className="block font-bold">{contract.title}</span>
                                 <span className="block text-xs text-gray-500">{contract.id} · {contract.practiceArea}</span>

@@ -12,7 +12,7 @@ import { formatCurrency } from "@/_lib/format"
 export default function ClientPage({ params }: PageProps<"/dashboard/clients/[id]">) {
     return (
         <div className={dashboardContainer}>
-            <Link href="/dashboard/clients" className="self-start text-sm text-blue-strong underline-offset-4 hover:underline">
+            <Link href="/dashboard/clients" className="self-start text-sm text-blue-strong underline-offset-4 hover:underline uppercase font-black">
                 ← Todos os clientes
             </Link>
             <Suspense fallback={<PanelSkeleton rows={8} />}>

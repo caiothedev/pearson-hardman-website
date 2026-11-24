@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function DashboardLayout({ children }: LayoutProps<"/dashboard">) {
     return (
-        <div>
+        <div className="flex flex-1 flex-col md:flex-row">
             <Sidebar />
             <main id="conteudo" tabIndex={-1} className="flex flex-1 flex-col min-w-0 bg-gray-100 focus:outline-none">
                 {children}

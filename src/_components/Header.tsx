@@ -1,5 +1,7 @@
+import { Suspense } from "react"
 import Link from "next/link"
 import MobileMenu from "@/_components/MobileMenu"
+import HeaderActions from "@/_components/HeaderActions"
 import { NAV_LINKS } from "@/_data/site"
 import { container } from "@/_components/ui/styles"
 
@@ -18,26 +20,28 @@ export default function Header() {
                         Pearson Hardman
                     </span>
                 </Link>
-                <div className="w-full flex flex-row items-center justify-end lg:justify-between gap-3">
-                    <nav aria-label="Navegação principal" className="hidden lg:block">
-                        <ul className="flex flex-row items-center gap-8">
-                            {NAV_LINKS.map((link) => (
-                                <li key={link.href}>
-                                    <Link
-                                        href={link.href}
-                                        className="group relative py-2 font-bold uppercase text-xs tracking-[0.2em] text-gray-400-dark hover:text-white-text transition-normal"
-                                    >
-                                        {link.label}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </nav>
-                    <MobileMenu />
-                    <Link href="/#contato" className="hidden sm:inline-flex items-center justify-center gap-2 min-h-10 px-5 font-blair font-bold uppercase text-sm text-center cursor-pointer transition-normal disabled:cursor-not-allowed disabled:opacity-50 bg-white-background text-black-text border border-white-background hover:bg-transparent hover:text-white-text">
-                        Agendar Reunião
-                    </Link>
-                </div>
+                <Suspense fallback={null}>
+                    <HeaderActions>
+                        <nav aria-label="Navegação principal" className="hidden lg:block">
+                            <ul className="flex flex-row items-center gap-8">
+                                {NAV_LINKS.map((link) => (
+                                    <li key={link.href}>
+                                        <Link
+                                            href={link.href}
+                                            className="group relative py-2 font-bold uppercase text-xs tracking-[0.2em] text-gray-400-dark hover:text-white-text transition-normal"
+                                        >
+                                            {link.label}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </nav>
+                        <MobileMenu />
+                        <Link href="/#contato" className="hidden sm:inline-flex items-center justify-center gap-2 min-h-10 px-5 font-blair font-bold uppercase text-sm text-center cursor-pointer transition-normal disabled:cursor-not-allowed disabled:opacity-50 bg-white-background text-black-text border border-white-background hover:bg-transparent hover:text-white-text">
+                            Agendar Reunião
+                        </Link>
+                    </HeaderActions>
+                </Suspense>
             </div>
         </header>
     )

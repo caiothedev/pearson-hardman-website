@@ -1,6 +1,7 @@
 import "server-only"
 import { createHmac, timingSafeEqual } from "node:crypto"
 import { cookies } from "next/headers"
+import { connection } from "next/server"
 
 /**
  * Sessão em cookie assinado (HMAC-SHA256), sem banco e sem biblioteca.
@@ -52,5 +53,7 @@ export async function deleteSession() {
 /** Retorna o id do usuário logado ou `null`. Lê o cookie, então só roda por requisição. */
 export async function getSessionUserId(): Promise<string | null> {
     const token = (await cookies()).get(SESSION_COOKIE)?.value
-    return token ? verify(token) : null
+    if (!token) return null
+    await connection()
+    return verify(token)
 }
