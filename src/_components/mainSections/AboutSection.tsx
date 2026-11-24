@@ -20,7 +20,7 @@ export default function AboutSection() {
                         Hoje, sob a liderança de Jessica Pearson como sócia-gerente, representamos corporações,
                         executivos e investidores nos casos em que o resultado não admite segunda tentativa.
                     </p>
-                    <p className="text-gray-500">
+                    <p>
                         Nossa cultura é simples: contratamos apenas os melhores, preparamos cada caso como se fosse
                         a julgamento e só sentamos à mesa quando já sabemos onde queremos chegar.
                     </p>

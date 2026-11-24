@@ -9,24 +9,29 @@ export default function Footer() {
     return (
         <footer className="on-dark flex flex-col bg-black-background text-white-text">
             <div className={`${container} grid grid-cols-1 gap-12 py-16 md:py-20 lg:grid-cols-12`}>
-                <div className="flex flex-col gap-6 lg:col-span-4">
-                    <div className="flex flex-col leading-[3px]">
-                        <span className="pearson-hardman-font font-medium uppercase text-xl">
-                            Pearson Hardman
-                        </span>
-                        <span className="font-blair font-light uppercase tracking-[0.5em] text-[0.65rem] text-gray-400-dark mt-2">
-                            Advogados
-                        </span>
+                <div className="flex flex-col gap-4 items-start justify-between lg:col-span-4">
+                    <div className="flex flex-col gap-6">
+                        <div className="flex flex-col leading-[3px]">
+                            <span className="pearson-hardman-font font-medium uppercase text-xl">
+                                Pearson Hardman
+                            </span>
+                            <span className="font-blair font-light uppercase tracking-[0.5em] text-[0.65rem] text-gray-400-dark mt-2">
+                                Advogados
+                            </span>
+                        </div>
+                        <address className="not-italic text-sm leading-relaxed text-gray-400-dark">
+                            <p>{ADDRESS.street}</p>
+                            <p>{ADDRESS.city}</p>
+                            <p className="mt-2">
+                                <a href={ADDRESS.phoneHref} className={linkClass}>
+                                    {ADDRESS.phone}
+                                </a>
+                            </p>
+                        </address>
                     </div>
-                    <address className="not-italic text-sm leading-relaxed text-gray-400-dark">
-                        <p>{ADDRESS.street}</p>
-                        <p>{ADDRESS.city}</p>
-                        <p className="mt-2">
-                            <a href={ADDRESS.phoneHref} className={linkClass}>
-                                {ADDRESS.phone}
-                            </a>
-                        </p>
-                    </address>
+                    <button>
+                        troca de idioma
+                    </button>
                 </div>
                 <div className="grid grid-cols-1 gap-10 sm:grid-cols-3 lg:col-span-8">
                     <nav aria-labelledby="footer-firma" className="flex flex-col gap-2">

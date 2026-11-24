@@ -37,7 +37,7 @@ export const ADDRESS = {
 
 export const STATS = [
     { value: "1", label: "Sócia-gerente, uma única palavra final" },
-    { value: "100%", label: "Dos associados formados em Harvard" },
+    { value: "99,9%", label: "Dos associados formados em Harvard" },
     { value: "0", label: "Acordos que fechamos por menos do que valiam" },
 ]
 
