@@ -3,6 +3,22 @@
  * Mantenha os textos neste arquivo para que os componentes fiquem só com a apresentação.
  */
 
+export const SITE = {
+    name: "Pearson Hardman",
+    url: "https://pearsonhardman.com",
+    domain: "pearsonhardman.com.br",
+    description:
+        "Firma de advocacia corporativa de Manhattan: fusões e aquisições, contencioso empresarial e direito societário. Site fictício inspirado na série Suits.",
+}
+
+/** Conteúdo das Open Graph images geradas em `src/app/opengraph-image.tsx`. */
+export const OG_HOME = {
+    alt: "Pearson Hardman: firma de advocacia corporativa de Manhattan",
+    eyebrow: "Advocacia corporativa",
+    title: "Nós não jogamos com as probabilidades.",
+    description: "Fusões e aquisições, contencioso empresarial e direito societário.",
+}
+
 export const NAV_LINKS = [
     { href: "/#firma", label: "Firma" },
     { href: "/#atuacao", label: "Atuação" },
@@ -16,7 +32,7 @@ export const ADDRESS = {
     city: "New York, NY 10000",
     phone: "(212) 555-0188",
     fax: "(212) 555-0189",
-    phoneHref: "tel:+12125550100",
+    phoneHref: "tel:+12125550188",
 }
 
 export const STATS = [

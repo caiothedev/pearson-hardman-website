@@ -34,7 +34,7 @@ export default function Header() {
                         </ul>
                     </nav>
                     <MobileMenu />
-                    <Link href="/#contato" className="inline-flex items-center justify-center gap-2 min-h-10 px-5 font-blair font-bold uppercase text-sm text-center cursor-pointer transition-normal disabled:cursor-not-allowed disabled:opacity-50 bg-white-background text-black-text border border-white-background hover:bg-transparent hover:text-white-text">
+                    <Link href="/#contato" className="hidden sm:inline-flex items-center justify-center gap-2 min-h-10 px-5 font-blair font-bold uppercase text-sm text-center cursor-pointer transition-normal disabled:cursor-not-allowed disabled:opacity-50 bg-white-background text-black-text border border-white-background hover:bg-transparent hover:text-white-text">
                         Agendar Reunião
                     </Link>
                 </div>

@@ -65,7 +65,7 @@ export default function MobileMenu() {
                 id={MENU_ID}
                 aria-label="Navegação principal"
                 hidden={!open}
-                className="fixed inset-x-0 top-0 bottom-0 bg-black-background border-t-2 border-white-text/10"
+                className="fixed inset-x-0 top-16 md:top-20 bottom-0 overflow-y-auto overscroll-contain bg-black-background border-t-2 border-white-text/10"
             >
                 <ul className="flex flex-col px-4 py-6">
                     {NAV_LINKS.map((link) => (

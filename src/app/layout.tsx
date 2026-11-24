@@ -1,11 +1,11 @@
 import type { Metadata, Viewport } from "next"
+import { SITE } from "@/_data/site"
 import Header from "@/_components/Header"
-import Footer from "@/_components/Footer"
 import { nimbusSans, itcBlair } from "@/fonts"
 import "./globals.css"
 
-const SITE_URL = "https://pearsonhardman.com.br"
-const DESCRIPTION = "Firma de advocacia corporativa de Manhattan: fusões e aquisições, contencioso empresarial e direito societário. Site fictício inspirado na série Suits."
+const SITE_URL = SITE.url
+const DESCRIPTION = SITE.description
 
 export const metadata: Metadata = {
     metadataBase: new URL(SITE_URL),
@@ -31,14 +31,6 @@ export const metadata: Metadata = {
         siteName: "Pearson Hardman",
         title: "Pearson Hardman",
         description: DESCRIPTION,
-        images: [
-            {
-                url: "/og-image.jpg",
-                width: 1200,
-                height: 630,
-                alt: "Pearson Hardman",
-            },
-        ],
     },
     twitter: {
         card: "summary_large_image",
@@ -81,7 +73,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <body className="min-h-full flex flex-col">
                 <Header />
                 {children}
-                <Footer />
             </body>
         </html>
     )
