@@ -41,7 +41,7 @@ export default function ContractsTable({ contracts, showClient = false }: { cont
                                 </td>
                             )}
                             <td className={`${td} whitespace-nowrap text-gray-500`}>{formatDate(contract.startDate)}</td>
-                            <td className={`${td} whitespace-nowrap text-right tabular-nums`}>{formatCurrency(contract.value)}</td>
+                            <td className={`${td} whitespace-nowrap font-bold text-right tabular-nums`}>{formatCurrency(contract.value)}</td>
                             <td className={td}><ContractStatusBadge status={contract.status} /></td>
                         </tr>
                     ))}

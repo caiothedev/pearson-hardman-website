@@ -54,7 +54,7 @@ export default function LoginForm({ demoAccounts }: { demoAccounts: DemoAccount[
                     {pending ? "Verificando" : "Entrar"}
                 </Button>
             </form>
-            <section aria-labelledby="demo-title" className="flex flex-col gap-4 border-t border-gray-300 pt-8">
+            <section aria-labelledby="demo-title" className="flex flex-col gap-4 border-t-2 border-gray-300 pt-8">
                 <div className="flex flex-col gap-1">
                     <h2 id="demo-title" className={labelClass}>Credenciais de demonstração</h2>
                     <p className="text-sm text-gray-500">
@@ -63,7 +63,7 @@ export default function LoginForm({ demoAccounts }: { demoAccounts: DemoAccount[
                 </div>
                 <ul className="flex flex-col">
                     {demoAccounts.map((account) => (
-                        <li key={account.email} className="border-b border-gray-300 last:border-b-0">
+                        <li key={account.email} className="border-b-2 border-gray-300 last:border-b-0">
                             <button
                                 type="button"
                                 onClick={() => fill(account)}

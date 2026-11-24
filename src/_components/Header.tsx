@@ -3,7 +3,7 @@ import Link from "next/link"
 import MobileMenu from "@/_components/MobileMenu"
 import HeaderActions from "@/_components/HeaderActions"
 import { NAV_LINKS } from "@/_data/site"
-import { container } from "@/_components/ui/styles"
+import HeaderContainer, { HeaderContainerFallback } from "@/_components/HeaderContainer"
 
 export default function Header() {
     return (
@@ -14,13 +14,8 @@ export default function Header() {
             >
                 Pular para o conteúdo
             </a>
-            <div className={`${container} flex h-16 md:h-20 flex-row items-center justify-between gap-8 md:gap-10 lg:gap-12`}>
-                <Link href="/" aria-label="Pearson Hardman, página inicial" className="flex flex-col leading-none">
-                    <span className="pearson-hardman-font whitespace-nowrap font-medium uppercase text-sm sm:text-base md:text-lg">
-                        Pearson Hardman
-                    </span>
-                </Link>
-                <Suspense fallback={null}>
+            <Suspense fallback={<HeaderContainerFallback />}>
+                <HeaderContainer>
                     <HeaderActions>
                         <nav aria-label="Navegação principal" className="hidden lg:block">
                             <ul className="flex flex-row items-center gap-8">
@@ -41,8 +36,8 @@ export default function Header() {
                             Agendar Reunião
                         </Link>
                     </HeaderActions>
-                </Suspense>
-            </div>
+                </HeaderContainer>
+            </Suspense>
         </header>
     )
 }

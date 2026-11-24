@@ -32,7 +32,7 @@ async function AllContracts() {
 
     return (
         <Panel>
-            <div className="flex flex-wrap items-center justify-between gap-4 border-b border-gray-300 px-4 py-4">
+            <div className="flex flex-wrap items-center justify-between gap-4 border-b-2 border-gray-300 px-4 py-4">
                 <h2 className={panelHeading}>{contracts.length} contratos</h2>
                 <p className="text-sm text-gray-500">
                     Valor total: <span className="font-bold text-black-text tabular-nums">{formatCurrency(total)}</span>
