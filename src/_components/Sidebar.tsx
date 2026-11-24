@@ -22,18 +22,18 @@ async function UserCard() {
 
     return (
         <div className="flex flex-row items-center justify-between gap-5">
-            <div className="flex items-center gap-3">
+            <div className="flex min-w-0 items-center gap-3">
                 <Avatar name={user.name} initials={user.initials} image={user.image} />
                 <div className="flex min-w-0 flex-col">
-                    <span className="truncate font-bold text-sm">
+                    <span className="truncate font-bold text-sm" title={user.name}>
                         {user.name}
                     </span>
-                    <span className="truncate text-xs text-gray-400-dark">
+                    <span className="truncate text-xs text-gray-400-dark" title={user.title}>
                         {user.title}
                     </span>
                 </div>
             </div>
-            <form action={logout}>
+            <form action={logout} className="shrink-0">
                 <button
                     type="submit"
                     className="cursor-pointer font-blair font-bold uppercase tracking-[0.2em] text-xs text-gray-400-dark transition-fast hover:text-white-text"
